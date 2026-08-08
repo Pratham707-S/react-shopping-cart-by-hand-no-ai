@@ -8,7 +8,7 @@ export const CartProvider = ({ children }) => {
   const products = initialProducts;
   const [cart, setCart] = useState([]);
 
-  // add item into the cart
+
   const addtoCart = (product) => {
     toast.success('Item add to Cart', {
       position: "top-right",
@@ -35,7 +35,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // REMOVE ITEM FROM CART 
+  
   const removeFromCart = (productId, removeAll = false) => {
     toast.success('Item Remove From Cart', {
       position: "top-right",
