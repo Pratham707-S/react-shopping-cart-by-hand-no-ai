@@ -10,7 +10,7 @@ const ProductDetail = () => {
   const { addtoCart } = useCart();
 
   useEffect(() => {
-    // String conversion ensure karta hai ki ID match hone me koi problem na ho
+   
     const foundProduct = initialProducts.find((data) => String(data.id) === String(id));
     setProduct(foundProduct);
   }, [id]);
@@ -29,7 +29,7 @@ const ProductDetail = () => {
       </Link> 
 
       <div className="grid grid-cols-1 lg:grid-cols-8 gap-8">
-        {/* Left Column: Image */}
+
         <div className="w-full lg:col-span-4">
           <img 
             src={product.image} 
@@ -38,7 +38,7 @@ const ProductDetail = () => {
           />
         </div>
 
-        {/* Right Column: Details & Add to Cart */}
+     
         <div className="flex flex-col justify-between lg:col-span-4 space-y-6">
           <div>
             <h1 className="text-3xl font-extrabold text-white mb-4 leading-tight tracking-tight">{product.name}</h1>
@@ -69,9 +69,8 @@ const ProductDetail = () => {
             </ul>
           </div>
 
-         {/* Action Buttons Container */}
-         <div className="space-y-3">
-              {/* Add to Cart Button */}
+            <div className="space-y-3">
+          
               <button 
                 onClick={() => addtoCart(product)} 
                 className="w-full py-3 bg-sky-600 text-white font-bold rounded-full shadow-lg shadow-sky-800/50 cursor-pointer hover:bg-sky-700 transition duration-300 flex items-center justify-center gap-2"
@@ -80,7 +79,6 @@ const ProductDetail = () => {
                 <span>Add to Cart</span>
               </button>
 
-              {/* Keep Shopping Button */}
               <Link 
                 to={'/'} 
                 className="w-full py-3 border-2 border-gray-700 bg-transparent text-gray-300 font-bold rounded-full shadow-md cursor-pointer hover:bg-gray-800 hover:text-white transition duration-300 flex items-center justify-center gap-2"

@@ -78,7 +78,7 @@ const Checkout = () => {
                   required
                   value={formData.name} 
                   onChange={handleChange}
-                  placeholder="John Doe" 
+                  placeholder="Pratham " 
                   className="w-full bg-gray-800 border border-gray-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500"
                 />
               </div>
@@ -91,7 +91,7 @@ const Checkout = () => {
                   required
                   value={formData.email} 
                   onChange={handleChange}
-                  placeholder="john@example.com" 
+                  placeholder="Pratham@example.com" 
                   className="w-full bg-gray-800 border border-gray-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500"
                 />
               </div>
