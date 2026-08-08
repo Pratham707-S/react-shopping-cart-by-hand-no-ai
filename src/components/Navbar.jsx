@@ -11,7 +11,7 @@ const Navbar = () => {
     <Link to={'/'} className="flex items-center space-x-3 cursor-pointer">
       <Home className='w-8 h-8 text-sky-800 drop-shadow-lg'/>
       <h1 className='text-3xl font-extrabold tracking-widest uppercase'>
-        KP <span className='text-sky-300'>Store</span>
+        P <span className='text-sky-300'>Store</span>
       </h1>
     </Link>
 

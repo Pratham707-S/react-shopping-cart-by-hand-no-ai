@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 
 import { ShoppingCart } from "lucide-react";
+
+import { useCart } from "../Context/CartContext";
 const ProductCart = ({ product }) => {
+  const {} = useCart();
   return (
     <>
       <div className="bg-gray-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col h-full transition duration-500 transform border border-gray-800 group hover:scale-[1.03]">
